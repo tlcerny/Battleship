@@ -10,7 +10,9 @@
 #define __BattleShip__Board__
 
 #include <iostream>
+#include <string>
 #include <vector>
+using std::string;
 
 class Board
 {
@@ -20,7 +22,7 @@ public:
     
     
 private:
-    std::vector <std::pair<char,int> > elems[100];
+    std::vector <std::pair<char,int> > elems;
     
     
 };

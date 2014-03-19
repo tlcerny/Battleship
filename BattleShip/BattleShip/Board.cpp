@@ -13,32 +13,36 @@ using std::cout;
 using std::endl;
 using std::vector;
 using std::string;
-
-
+using std::make_pair;
 
 
 Board::Board()
 {
     
     
-    for(int i = 0;i<=9;i++)
-    {
-        for(int j = 0; j<=9;j++)
+    
+    
+        for(char ch = 'A'; ch <= 'J'; ch++)
         {
+            for(int j = 1; j<=10;j++)
+            {
             
+                elems.push_back(make_pair(ch,j));
             
-            
-            
+            }
         }
-    }
-            
+    
+    
 
+  
     
     
-    
-            
-           // cout << elems[0].first << elems[0].second << endl;
-            
+    for(auto i = 0; i < elems.size(); i++)
+    {
+        cout << elems[i].first << elems[i].second << endl;
+    }
+        
+
   
     
 }
