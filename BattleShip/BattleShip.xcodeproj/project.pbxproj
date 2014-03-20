@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0AB3ED18DA5EF30067AB9C /* Battleship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AB3EB18DA5EF30067AB9C /* Battleship.cpp */; };
 		8D80324018D7EB1D000457F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D80323F18D7EB1D000457F4 /* main.cpp */; };
 		8D80324218D7EB1D000457F4 /* BattleShip.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D80324118D7EB1D000457F4 /* BattleShip.1 */; };
 		8D80324918D7EC20000457F4 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D80324818D7EC20000457F4 /* Board.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8D0AB3EB18DA5EF30067AB9C /* Battleship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Battleship.cpp; sourceTree = "<group>"; };
+		8D0AB3EC18DA5EF30067AB9C /* Battleship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battleship.h; sourceTree = "<group>"; };
 		8D80323C18D7EB1D000457F4 /* BattleShip */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BattleShip; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D80323F18D7EB1D000457F4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8D80324118D7EB1D000457F4 /* BattleShip.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BattleShip.1; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				8D80324818D7EC20000457F4 /* Board.cpp */,
 				8D80323F18D7EB1D000457F4 /* main.cpp */,
 				8D80324118D7EB1D000457F4 /* BattleShip.1 */,
+				8D0AB3EB18DA5EF30067AB9C /* Battleship.cpp */,
+				8D0AB3EC18DA5EF30067AB9C /* Battleship.h */,
 			);
 			path = BattleShip;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			files = (
 				8D80324018D7EB1D000457F4 /* main.cpp in Sources */,
 				8D80324918D7EC20000457F4 /* Board.cpp in Sources */,
+				8D0AB3ED18DA5EF30067AB9C /* Battleship.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

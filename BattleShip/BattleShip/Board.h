@@ -20,7 +20,6 @@ public:
     Board();
     
     
-    
 private:
     std::vector <std::pair<char,int> > elems;
     
