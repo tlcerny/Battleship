@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Eric Pelto. All rights reserved.
 //
 #include "Board.h"
+#include "Player.h"
 #include <iostream>
 #include <vector>
 #include <utility>
@@ -18,31 +19,37 @@ using std::make_pair;
 
 Board::Board()
 {
+   
+    
+    //vector< vector <pair<char,int> > > elems;
     
     
     
-    
-        for(char ch = 'A'; ch <= 'J'; ch++)
+    //Initialize everything on board to zero
+    for(int i = 1; i <= 10; i++)
         {
+            vector<int> temp2;
             for(int j = 1; j<=10;j++)
             {
-            
-                elems.push_back(make_pair(ch,j));
+                temp2.push_back(0);
             
             }
+            _vec.push_back(temp2);
         }
     
     
+}
 
-  
-    
-    
-    for(auto i = 0; i < elems.size(); i++)
+
+void Board::printBoard()
+{
+    //Print Board
+    for(int i = 0; i < _vec.size(); i++)
     {
-        cout << elems[i].first << elems[i].second << endl;
+        for(int k = 0; k < _vec[0].size(); k++)
+        {
+            cout << _vec[i][k];
+        }
     }
-        
-
-  
     
 }

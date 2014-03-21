@@ -12,16 +12,16 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Player.h"
 using std::string;
 
-class Board
+class Board: public Player
 {
 public:
     Board();
-    
+    void printBoard();
     
 private:
-    std::vector <std::pair<char,int> > elems;
     
     
 };

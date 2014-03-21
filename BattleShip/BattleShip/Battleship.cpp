@@ -11,32 +11,58 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <utility>
 using std::string;
 using std::cout;
 using std::endl;
+using std::make_pair;
+
+
 
 Battleship::Battleship()
 {
     
     
+}
+
+void Battleship::setACC()
+{
     
-    cout << "Placing size 6 ship:" << endl;
+}
+
+void Battleship::setBattleship()
+{
+    
+}
+void Battleship::setSubmarine()
+{
+    
+}
+void Battleship::setDestroyer()
+{
+    
+}
+void Battleship::setPatrol()
+{
+    
+}
+
+void Battleship::setName()
+{
+    
+}
+
+string Battleship::getName()
+{
+    return _name;
+}
+
+
+bool shipValid()
+{
+    bool valid = false;
     
     
-    cout << "Placing size 4 ships:" << endl;
-    
-    
-    cout << "Placing size 3 ships:" << endl;
-    
-    
-    cout << "Placing size 2 ships:" << endl;
-    
-    
-    
-    
-    
-    
-    
-    
+    return valid;
     
 }
