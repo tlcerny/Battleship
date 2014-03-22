@@ -7,6 +7,7 @@
 //
 
 #include "Battleship.h"
+#include "Player.h"
 #include <iostream>
 #include <iostream>
 #include <string>
@@ -16,14 +17,15 @@ using std::string;
 using std::cout;
 using std::endl;
 using std::make_pair;
+using std::cin;
 
 
 
 Battleship::Battleship()
 {
-    
-    
+
 }
+
 
 void Battleship::setACC()
 {

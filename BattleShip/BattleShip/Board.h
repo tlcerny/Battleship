@@ -20,6 +20,7 @@ class Board: public Player
 public:
     Board();
     void printBoard();
+    void printBoardTest(vector<int>);
     
 private:
     

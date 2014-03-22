@@ -43,13 +43,39 @@ Board::Board()
 
 void Board::printBoard()
 {
+    auto count = 0;
     //Print Board
+    cout << " __________" << endl <<  "|";
     for(int i = 0; i < _vec.size(); i++)
     {
         for(int k = 0; k < _vec[0].size(); k++)
         {
             cout << _vec[i][k];
+            count++;
+            if( count == 10)
+            {
+                cout << endl;
+                cout << "----------" << endl;
+                count = 0;
+            }
+            
         }
     }
     
 }
+
+
+void Board::printBoardTest(vector<int> myvec)
+{
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
