@@ -13,6 +13,7 @@
 #include <string>
 #include <vector>
 #include "Player.h"
+#include "Battleship.h"
 using std::string;
 
 class Board: public Player
@@ -20,10 +21,20 @@ class Board: public Player
 public:
     Board();
     void printBoard();
-    void printBoardTest(vector<int>);
-    
+    bool shipValid();
+    void setName();
+    void setACC();
+    void setBattleship();
+    void setSubmarine();
+    void setDestroyer();
+    void setPatrol();
+    string getName();
+    void takePosition(int row,int column);
 private:
-    
+    string _name;
+    string _health;
+    string _location;
+    bool dead;
     
 };
 

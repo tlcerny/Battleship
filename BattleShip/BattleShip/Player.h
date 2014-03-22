@@ -25,10 +25,10 @@ class Player
     
     public:
     Player();
-
+	
     string setName();
     string getName();
-    
+    void takePosition(int row,int column);
     
     protected:
     vector< vector<int>> _vec;   

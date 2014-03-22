@@ -10,7 +10,7 @@
 #define __BattleShip__Battleship__
 
 #include "Player.h"
-#include <iostream>
+#include "Board.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -33,8 +33,9 @@ public:
     void setDestroyer();
     void setPatrol();
     string getName();
+
     
-private:
+protected:
     string _name;
     string _health;
     string _location;

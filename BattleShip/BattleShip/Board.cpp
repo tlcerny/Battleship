@@ -11,6 +11,7 @@
 #include <vector>
 #include <utility>
 using std::cout;
+using std::cin;
 using std::endl;
 using std::vector;
 using std::string;
@@ -37,7 +38,13 @@ Board::Board()
             _vec.push_back(temp2);
         }
     
-    
+}
+
+void Board::takePosition(int row,int column)
+{
+
+	_vec[row][column] = 1;
+
 }
 
 
@@ -45,7 +52,6 @@ void Board::printBoard()
 {
     auto count = 0;
     //Print Board
-    cout << " __________" << endl <<  "|";
     for(int i = 0; i < _vec.size(); i++)
     {
         for(int k = 0; k < _vec[0].size(); k++)
@@ -55,7 +61,6 @@ void Board::printBoard()
             if( count == 10)
             {
                 cout << endl;
-                cout << "----------" << endl;
                 count = 0;
             }
             
@@ -65,17 +70,57 @@ void Board::printBoard()
 }
 
 
-void Board::printBoardTest(vector<int> myvec)
+void Board::setACC()
 {
-    
-    
-    
-    
-    
-    
-    
-    
-    
+	int row, column;
+	for(auto j = 0; j <=4; j++)
+	{
+		
+		cout << "place aircraft carrier using position (ij)" << endl;
+		cin >> row;
+		cin >> column;
+
+		cout << "hello" << endl;
+		
+		takePosition(row,column);
+	}
+  
 }
 
 
+void Board::setBattleship()
+{
+    
+}
+void Board::setSubmarine()
+{
+    
+}
+void Board::setDestroyer()
+{
+    
+}
+void Board::setPatrol()
+{
+    
+}
+
+void Board::setName()
+{
+    
+}
+
+string Board::getName()
+{
+    return _name;
+}
+
+
+bool shipValid()
+{
+    bool valid = false;
+    
+    
+    return valid;
+    
+}
