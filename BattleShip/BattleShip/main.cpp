@@ -13,7 +13,7 @@ int main()
 {
     Board b;
 	
-	
+	int boatsToPlace=5;
 
 	b.setACC();
 	b.printBoard();

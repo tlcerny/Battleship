@@ -118,6 +118,7 @@ void Board::setACC()
 	cin >> column;
 	cin >> direction;
 
+	//Down
 	if (direction == 0x64){
 		for (auto i = 0; i <= 4; i++){
 
@@ -125,11 +126,30 @@ void Board::setACC()
 			row++;
 		}
 	}
+	//Right
 	else if (direction == 0x72){
 		for (auto i = 0; i <= 4; i++){
 
 			takePosition(row, column);
 			column++;
+		}
+
+	}
+	//Up
+	else if (direction == 0x75){
+		for (auto i = 0; i <= 4; i++){
+			takePosition(row, column);
+			row--;
+
+		}
+
+	}
+	//Left
+	else if (direction == 0x6c){
+		for (auto i = 0; i <= 4; i++){
+			takePosition(row, column);
+			column--;
+
 		}
 
 	}
@@ -140,65 +160,196 @@ void Board::setACC()
 void Board::setBattleship()
 {
 	int row, column;
-	for (auto j = 0; j <= 3; j++)
-	{
+	char direction;
 
-		cout << "place BattleShip using position (ij)" << endl;
-		cin >> row;
-		cin >> column;
 
-		
+	cout << "place Battleship using position (ij) followed by a direction" << endl;
+	cin >> row;
+	cin >> column;
+	cin >> direction;
 
-		takePosition(row, column);
+	//Down
+	if (direction == 0x64){
+		for (auto i = 0; i <= 3; i++){
+
+			takePosition(row, column);
+			row++;
+		}
 	}
+	//Right
+	else if (direction == 0x72){
+		for (auto i = 0; i <= 3; i++){
+
+			takePosition(row, column);
+			column++;
+		}
+
+	}
+	//Up
+	else if (direction == 0x75){
+		for (auto i = 0; i <= 3; i++){
+			takePosition(row, column);
+			row--;
+
+		}
+
+	}
+	//Left
+	else if (direction == 0x6c){
+		for (auto i = 0; i <= 3; i++){
+			takePosition(row, column);
+			column--;
+
+		}
+
+	}
+
 
 }
 void Board::setSubmarine()
 {
 	int row, column;
-	for (auto j = 0; j <= 2; j++)
-	{
+	char direction;
 
-		cout << "place Submarine using position (ij)" << endl;
-		cin >> row;
-		cin >> column;
 
-		
+	cout << "place submarine using position (ij) followed by a direction" << endl;
+	cin >> row;
+	cin >> column;
+	cin >> direction;
 
-		takePosition(row, column);
+	//Down
+	if (direction == 0x64){
+		for (auto i = 0; i <= 2; i++){
+
+			takePosition(row, column);
+			row++;
+		}
+	}
+	//Right
+	else if (direction == 0x72){
+		for (auto i = 0; i <= 2; i++){
+
+			takePosition(row, column);
+			column++;
+		}
+
+	}
+	//Up
+	else if (direction == 0x75){
+		for (auto i = 0; i <= 2; i++){
+			takePosition(row, column);
+			row--;
+
+		}
+
+	}
+	//Left
+	else if (direction == 0x6c){
+		for (auto i = 0; i <= 2; i++){
+			takePosition(row, column);
+			column--;
+
+		}
+
 	}
 
 }
 void Board::setDestroyer()
 {
 	int row, column;
-	for (auto j = 0; j <= 2; j++)
-	{
+	char direction;
 
-		cout << "place Destroyer using position (ij)" << endl;
-		cin >> row;
-		cin >> column;
 
-		
+	cout << "place Destroyer using position (ij) followed by a direction" << endl;
+	cin >> row;
+	cin >> column;
+	cin >> direction;
 
-		takePosition(row, column);
+	//Down
+	if (direction == 0x64){
+		for (auto i = 0; i <= 2; i++){
+
+			takePosition(row, column);
+			row++;
+		}
 	}
+	//Right
+	else if (direction == 0x72){
+		for (auto i = 0; i <= 2; i++){
+
+			takePosition(row, column);
+			column++;
+		}
+
+	}
+	//Up
+	else if (direction == 0x75){
+		for (auto i = 0; i <= 2; i++){
+			takePosition(row, column);
+			row--;
+
+		}
+
+	}
+	//Left
+	else if (direction == 0x6c){
+		for (auto i = 0; i <= 2; i++){
+			takePosition(row, column);
+			column--;
+
+		}
+
+	}
+
 
 }
 void Board::setPatrol()
 {
 	int row, column;
-	for (auto j = 0; j <= 2; j++)
-	{
+	char direction;
 
-		cout << "place Patrol using position (ij)" << endl;
-		cin >> row;
-		cin >> column;
 
-		
+	cout << "place Patrol using position (ij) followed by a direction" << endl;
+	cin >> row;
+	cin >> column;
+	cin >> direction;
 
-		takePosition(row, column);
+	//Down
+	if (direction == 0x64){
+		for (auto i = 0; i <= 1; i++){
+
+			takePosition(row, column);
+			row++;
+		}
 	}
+	//Right
+	else if (direction == 0x72){
+		for (auto i = 0; i <= 2; i++){
+
+			takePosition(row, column);
+			column++;
+		}
+
+	}
+	//Up
+	else if (direction == 0x75){
+		for (auto i = 0; i <= 1; i++){
+			takePosition(row, column);
+			row--;
+
+		}
+
+	}
+	//Left
+	else if (direction == 0x6c){
+		for (auto i = 0; i <= 1; i++){
+			takePosition(row, column);
+			column--;
+
+		}
+
+	}
+
 
 }
 
