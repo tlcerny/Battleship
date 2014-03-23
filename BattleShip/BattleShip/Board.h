@@ -21,6 +21,7 @@ class Board: public Player
 public:
     Board();
     void printBoard();
+	void printAiBoard();
     bool shipValid();
     void setName();
     void setACC();
@@ -35,6 +36,8 @@ private:
     string _health;
     string _location;
     bool dead;
+	vector< vector<int>> _vec;
+	vector< vector<int>> _aiVec;
     
 };
 

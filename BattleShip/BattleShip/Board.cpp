@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <utility>
+#include <sstream>
 using std::cout;
 using std::cin;
 using std::endl;
@@ -36,14 +37,17 @@ Board::Board()
             
             }
             _vec.push_back(temp2);
+			_aiVec.push_back(temp2);
         }
     
 }
 
 void Board::takePosition(int row,int column)
 {
-
-	_vec[row][column] = 1;
+	
+		_vec[row][column] = 1;
+	
+	
 
 }
 
@@ -52,37 +56,82 @@ void Board::printBoard()
 {
     auto count = 0;
     //Print Board
+	cout << endl;
+	cout << "PLAYER BOARD" << endl;
+	cout << "-----------------------------------------" << endl;
     for(int i = 0; i < _vec.size(); i++)
     {
+		cout << "| ";
         for(int k = 0; k < _vec[0].size(); k++)
         {
-            cout << _vec[i][k];
+			cout << _vec[i][k] << " | ";
             count++;
             if( count == 10)
             {
-                cout << endl;
+				cout << endl;
+                cout << "-----------------------------------------"<<endl;
                 count = 0;
             }
             
         }
+		
     }
-    
+	cout << endl;
 }
 
+void Board::printAiBoard(){
+	auto count = 0;
+	//Print Board
+	cout << endl;
+	cout << "AI BOARD" << endl;
+	cout << "-----------------------------------------" << endl;
+	for (int i = 0; i < _aiVec.size(); i++)
+	{
+		cout << "| ";
+		for (int k = 0; k < _aiVec[0].size(); k++)
+		{
+			cout << _aiVec[i][k] << " | ";
+			count++;
+			if (count == 10)
+			{
+				cout << endl;
+				cout << "-----------------------------------------" << endl;
+				count = 0;
+			}
+
+		}
+
+	}
+
+
+	cout << endl;
+}
 
 void Board::setACC()
 {
 	int row, column;
-	for(auto j = 0; j <=4; j++)
-	{
-		
-		cout << "place aircraft carrier using position (ij)" << endl;
-		cin >> row;
-		cin >> column;
+	char direction;
 
-		cout << "hello" << endl;
-		
-		takePosition(row,column);
+
+	cout << "place aircraft carrier using position (ij) followed by a direction" << endl;
+	cin >> row;
+	cin >> column;
+	cin >> direction;
+
+	if (direction == 0x64){
+		for (auto i = 0; i <= 4; i++){
+
+			takePosition(row, column);
+			row++;
+		}
+	}
+	else if (direction == 0x72){
+		for (auto i = 0; i <= 4; i++){
+
+			takePosition(row, column);
+			column++;
+		}
+
 	}
   
 }
@@ -90,19 +139,67 @@ void Board::setACC()
 
 void Board::setBattleship()
 {
-    
+	int row, column;
+	for (auto j = 0; j <= 3; j++)
+	{
+
+		cout << "place BattleShip using position (ij)" << endl;
+		cin >> row;
+		cin >> column;
+
+		
+
+		takePosition(row, column);
+	}
+
 }
 void Board::setSubmarine()
 {
-    
+	int row, column;
+	for (auto j = 0; j <= 2; j++)
+	{
+
+		cout << "place Submarine using position (ij)" << endl;
+		cin >> row;
+		cin >> column;
+
+		
+
+		takePosition(row, column);
+	}
+
 }
 void Board::setDestroyer()
 {
-    
+	int row, column;
+	for (auto j = 0; j <= 2; j++)
+	{
+
+		cout << "place Destroyer using position (ij)" << endl;
+		cin >> row;
+		cin >> column;
+
+		
+
+		takePosition(row, column);
+	}
+
 }
 void Board::setPatrol()
 {
-    
+	int row, column;
+	for (auto j = 0; j <= 2; j++)
+	{
+
+		cout << "place Patrol using position (ij)" << endl;
+		cin >> row;
+		cin >> column;
+
+		
+
+		takePosition(row, column);
+	}
+
 }
 
 void Board::setName()

@@ -30,8 +30,8 @@ class Player
     string getName();
     void takePosition(int row,int column);
     
-    protected:
-    vector< vector<int>> _vec;   
+  
+    
     
     
     

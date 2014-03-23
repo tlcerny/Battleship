@@ -12,10 +12,19 @@ using std::endl;
 int main()
 {
     Board b;
-	Battleship p;
-	Player h;
 	
+	
+
 	b.setACC();
+	b.printBoard();
+	b.printAiBoard();
+	b.setBattleship();
+	b.printBoard();
+	b.setDestroyer();
+	b.printBoard();
+	b.setPatrol();
+	b.printBoard();
+	b.setSubmarine();
 	b.printBoard();
 	system("pause");
     return 0;
