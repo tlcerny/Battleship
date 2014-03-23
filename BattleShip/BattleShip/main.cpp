@@ -15,17 +15,9 @@ int main()
 	
 	int boatsToPlace=5;
 
-	b.setACC();
+
 	b.printBoard();
-	b.printAiBoard();
-	b.setBattleship();
-	b.printBoard();
-	b.setDestroyer();
-	b.printBoard();
-	b.setPatrol();
-	b.printBoard();
-	b.setSubmarine();
-	b.printBoard();
+	//b.printAiBoard();
 	system("pause");
     return 0;
 }

@@ -21,12 +21,6 @@ using std::make_pair;
 
 Board::Board()
 {
-   
-    
-    //vector< vector <pair<char,int> > > elems;
-    
-    
-    
     //Initialize everything on board to zero
     for(int i = 1; i <= 10; i++)
         {
@@ -37,10 +31,47 @@ Board::Board()
             
             }
             _vec.push_back(temp2);
-			_aiVec.push_back(temp2);
+			//_playerDisplay.push_back(temp2);
+
+
         }
     
 }
+
+//void Board::makeAiBoard()
+//{
+//	    
+//	//Initialize everything on board to zero
+//    for(int i = 1; i <= 10; i++)
+//        {
+//            vector<int> temp2;
+//            for(int j = 1; j<=10;j++)
+//            {
+//                temp2.push_back(0);
+//            
+//            }
+//            _aiVec.push_back(temp2);
+//
+//        }
+//
+//	_aiVec[0][0] = 1;
+//	_aiVec[0][1] = 1;
+//	_aiVec[0][2] = 1;
+//	_aiVec[0][3] = 1;
+//	_aiVec[0][4] = 1;
+//	_aiVec[1][0] = 1;
+//	_aiVec[1][1] = 1;
+//	_aiVec[1][2] = 1;
+//	_aiVec[1][3] = 1;
+//	_aiVec[2][0] = 1;
+//	_aiVec[2][1] = 1;
+//	_aiVec[2][2] = 1;
+//	_aiVec[3][0] = 1;
+//	_aiVec[3][1] = 1;
+//	_aiVec[3][2] = 1;
+//	_aiVec[4][0] = 1;
+//	_aiVec[4][1] = 1;
+//}
 
 void Board::takePosition(int row,int column)
 {
@@ -78,80 +109,78 @@ void Board::printBoard()
     }
 	cout << endl;
 }
-
-void Board::printAiBoard(){
-	auto count = 0;
-	//Print Board
-	cout << endl;
-	cout << "AI BOARD" << endl;
-	cout << "-----------------------------------------" << endl;
-	for (int i = 0; i < _aiVec.size(); i++)
-	{
-		cout << "| ";
-		for (int k = 0; k < _aiVec[0].size(); k++)
-		{
-			cout << _aiVec[i][k] << " | ";
-			count++;
-			if (count == 10)
-			{
-				cout << endl;
-				cout << "-----------------------------------------" << endl;
-				count = 0;
-			}
-
-		}
-
-	}
-
-
-	cout << endl;
-}
-
-void Board::printAiDisplay()
-{
-    auto count = 0;
-    //Print Board
-	cout << "AI Selections" << endl;
-    for(int i = 0; i < _aiDisplayVec.size(); i++)
-    {
-        for(int k = 0; k < _aiDisplayVec[0].size(); k++)
-        {
-            cout << _aiDisplayVec[i][k];
-            count++;
-            if( count == 10)
-            {
-                cout << endl;
-                count = 0;
-            }
-            
-        }
-    }
-	cout << endl;
-    
-}
-
-void Board::printPlayerDisplay()
-{
-    auto count = 0;
-    //Print Board
-	cout << "Player's selections" << endl;
-    for(int i = 0; i < _playerDisplay.size(); i++)
-    {
-        for(int k = 0; k < _playerDisplay[0].size(); k++)
-        {
-            cout << _playerDisplay[i][k];
-            count++;
-            if( count == 10)
-            {
-                cout << endl;
-                count = 0;
-            }
-            
-        }
-    }
-	cout << endl;
-    
-}
+//
+//void Board::printAiBoard()
+//{
+//	auto count = 0;
+//	//Print Board
+//	cout << endl;
+//	cout << "AI BOARD" << endl;
+//	cout << "-----------------------------------------" << endl;
+//	for (int i = 0; i < _aiVec.size(); i++)
+//	{
+//		cout << "| ";
+//		for (int k = 0; k < _aiVec[0].size(); k++)
+//		{
+//			cout << _aiVec[i][k] << " | ";
+//			count++;
+//			if (count == 10)
+//			{
+//				cout << endl;
+//				cout << "-----------------------------------------" << endl;
+//				count = 0;
+//			}
+//
+//		}
+//
+//	}
+//
+//	cout << endl;
+//}
+//
+//void Board::printAiDisplay()
+//{
+//    auto count = 0;
+//    //Print Board
+//	cout << "AI Selections" << endl;
+//    for(int i = 0; i < _aiDisplayVec.size(); i++)
+//    {
+//        for(int k = 0; k < _aiDisplayVec[0].size(); k++)
+//        {
+//            cout << _aiDisplayVec[i][k];
+//            count++;
+//            if( count == 10)
+//            {
+//                cout << endl;
+//                count = 0;
+//            }
+//            
+//        }
+//    }
+//	cout << endl;
+//}
+//
+//void Board::printPlayerDisplay()
+//{
+//    auto count = 0;
+//    //Print Board
+//	cout << "Player's selections" << endl;
+//    for(int i = 0; i < _playerDisplay.size(); i++)
+//    {
+//        for(int k = 0; k < _playerDisplay[0].size(); k++)
+//        {
+//            cout << _playerDisplay[i][k];
+//            count++;
+//            if( count == 10)
+//            {
+//                cout << endl;
+//                count = 0;
+//            }
+//            
+//        }
+//    }
+//	cout << endl; 
+//}
 
 void Board::setACC()
 {
