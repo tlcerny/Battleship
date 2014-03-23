@@ -22,6 +22,8 @@ public:
     Board();
     void printBoard();
 	void printAiBoard();
+	void printAiDisplay();
+	void printPlayerDisplay();
     bool shipValid();
     void setName();
     void setACC();
@@ -38,7 +40,8 @@ private:
     bool dead;
 	vector< vector<int>> _vec;
 	vector< vector<int>> _aiVec;
-    
+	vector< vector<int>> _aiDisplayVec;
+    vector< vector<int>> _playerDisplay;
 };
 
 #endif /* defined(__BattleShip__Board__) */

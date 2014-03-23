@@ -107,6 +107,52 @@ void Board::printAiBoard(){
 	cout << endl;
 }
 
+void Board::printAiDisplay()
+{
+    auto count = 0;
+    //Print Board
+	cout << "AI Selections" << endl;
+    for(int i = 0; i < _aiDisplayVec.size(); i++)
+    {
+        for(int k = 0; k < _aiDisplayVec[0].size(); k++)
+        {
+            cout << _aiDisplayVec[i][k];
+            count++;
+            if( count == 10)
+            {
+                cout << endl;
+                count = 0;
+            }
+            
+        }
+    }
+	cout << endl;
+    
+}
+
+void Board::printPlayerDisplay()
+{
+    auto count = 0;
+    //Print Board
+	cout << "Player's selections" << endl;
+    for(int i = 0; i < _playerDisplay.size(); i++)
+    {
+        for(int k = 0; k < _playerDisplay[0].size(); k++)
+        {
+            cout << _playerDisplay[i][k];
+            count++;
+            if( count == 10)
+            {
+                cout << endl;
+                count = 0;
+            }
+            
+        }
+    }
+	cout << endl;
+    
+}
+
 void Board::setACC()
 {
 	int row, column;
