@@ -28,7 +28,7 @@ class Player
 	
     string setName();
     string getName();
-    void takePosition(int row,int column);
+   
     
   
     

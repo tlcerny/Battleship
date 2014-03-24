@@ -16,34 +16,35 @@
 #include "Battleship.h"
 using std::string;
 
-class Board: public Player
+class Board
 {
 public:
     Board();
-    void printBoard();
-	void printAiBoard();
-	void printAiDisplay();
-	void printPlayerDisplay();
 	void makeAiBoard();
-    bool shipValid();
-    void setName();
+    void printBoard();
+	
+
     void setACC();
     void setBattleship();
     void setSubmarine();
     void setDestroyer();
     void setPatrol();
-    string getName();
+   
     void takePosition(int row,int column);
-private:
-    string _name;
-    string _health;
-    string _location;
-    bool dead;
-	vector< vector<int>> _vec;
- 	vector< vector<int>> _playerDisplay;
-	vector< vector<int>> _aiVec;
-	vector< vector<int>> _aiDisplayVec;
+	bool checkForLoser();
+	
+	
+	bool checkBoard(int row, int column);
+	void clearSpot(int row, int column);
+	void hitTarget(int row, int column);
+	void missedTarget(int row, int column);
+	void printPlayerDisplay();
 
+private:
+    
+	vector< vector<int>> _vec;
+	vector< vector<int>> _displayVec;
+    
 };
 
 #endif /* defined(__BattleShip__Board__) */
