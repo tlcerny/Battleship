@@ -17,3 +17,21 @@ Met at the pub and created notecards based around what we felt we should priorit
 8. Look up interface(GUI)
 9. sound
 10. more robust AI
+
+
+
+
+March 12,2014
+
+worked for an hour
+Have a board.
+
+
+March 22, 2014
+
+Spent 5 hours in the lab working on placing boats on the board. We have that working now
+
+
+March 23, 2014 
+
+Game prototype is complete
