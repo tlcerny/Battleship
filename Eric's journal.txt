@@ -1,0 +1,34 @@
+Thomas and I did our initial user stories at the pub.  We found that our mains priorities was to make a simple battleship board, and be able to place ships.
+
+We also noted that we will need to research networking so we can have to gui applications on two seperate computers.
+
+
+
+Our main priority user stories were 
+
+1. Generate Board
+2. Create a ship class object: needs  to contain health and size
+3. Need to be able to place ships on board-need a menu with it
+	a. Valid spot checking needed
+4.Game Start
+	a. Player Turn
+	b. Select Space
+5. Dummy AI
+	a.Static board
+	b. Sequential spot selection
+6. Investigate networking
+7. Multiplayer
+8. Look up interface(GUI)
+9. sound
+10. more robust AI 
+
+
+We didnt' work together on the project during spring break, because Thomas was working and I was out of town.
+
+Started working on the project on the Saturday before the project was due.  Because of this we just wanted to get a working copy.
+We focused are project on this goal.
+
+
+We got a working copy, with not very robust code and poor design, but our goal of getting a working copy was complete.
+
+
